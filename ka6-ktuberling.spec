@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.2
+%define		kdeappsver	24.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		ktuberling
 Summary:	ktuberling
 Name:		ka6-%{kaname}
-Version:	24.05.2
+Version:	24.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	50b23fa19c9381951cc39b3276248843
+# Source0-md5:	18378304fda0c373a4df8097ea69a219
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -55,8 +55,8 @@ alike. The idea of the game is based around a once popular doll making
 concept.
 
 %description -l pl.UTF-8
-KTuberling jest prostą grą konstrukcyjną odpowiednią dla dzieci jak
-i dorosłych. Pomysł gry jest oparty na popularnej grze w ubieranie
+KTuberling jest prostą grą konstrukcyjną odpowiednią dla dzieci jak i
+dorosłych. Pomysł gry jest oparty na popularnej grze w ubieranie
 lalek.
 
 %package data
@@ -111,3 +111,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/ktuberling
 %{_datadir}/metainfo/org.kde.ktuberling.appdata.xml
 %{_datadir}/qlogging-categories6/ktuberling.categories
+%{_datadir}/qlogging-categories6/ktuberling.renamecategories
